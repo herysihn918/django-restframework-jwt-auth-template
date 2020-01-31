@@ -1,0 +1,6 @@
+/.vscode
+/db.sqlite3
+/venv
+/coreauth/__pycache__
+/coreauth/migrations/__pycache__
+/djangoauthtemplate/__pycache__

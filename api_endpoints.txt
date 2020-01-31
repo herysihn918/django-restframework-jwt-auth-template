@@ -1,0 +1,24 @@
+api/users/login/
+POST
+input: email, password
+output: token, user object
+
+api/users/register/
+POST
+input: first_name, last_name, company_name, user_role (admin=1 or employee=2), email, password
+output: user object
+
+api/users/handle_user/?pk=X
+GET
+input: pk(= user id)
+output: user object
+
+api/users/handle_user/
+DELETE
+input: pk(= user id)
+output: user object
+
+api/users/handle_user/
+PUT
+input: pk(= user id), any fields of {"first_name", "last_name", "company_name", "user_role(1=admin, 2=employee)"}
+output: updated user object
